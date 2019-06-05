@@ -1,0 +1,38 @@
+#include <iostream>
+
+int main() {
+  
+  double weight=0;
+  int planet=0;
+  
+  std::cout<<"Enter your weight on earth:\n";
+  std::cin>>weight;
+  std::cout<<"Enter the planet number for which you want to know your weight (1-6):\n";
+  std::cin>>planet;
+  
+  switch (planet)
+  {
+    case 1:
+      std::cout<<"Your weight on Venus is "<<weight*0.78;
+      break;
+    case 2:
+      std::cout<<"Your weight on Mars is "<<weight*0.39;
+      break;
+    case 3:
+      std::cout<<"Your weight on Jupiter is "<<weight*2.65;
+      break;
+    case 4:
+      std::cout<<"Your weight on Saturn is "<<weight*1.17;
+      break;
+    case 5:
+      std::cout<<"Your weight on Uranus is "<<weight*1.05;
+      break;
+    case 6:
+      std::cout<<"Your weight on Neptune is "<<weight*1.23;
+      break;
+    default:
+      std::cout<<"INVALID\n";
+      break;
+  }
+  
+}
